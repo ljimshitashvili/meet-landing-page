@@ -1,0 +1,270 @@
+:root{
+    --mint: #4D96A9;
+    --purple: #855FB1;
+    --black: #28283D;
+    --gray: #87879D;
+    --sky: #8FE3F9;
+    --pink: #D9B8FF;
+    --white: #FAFAFA;
+    --family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    font-family: var(--family);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 24px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 375px;
+    padding: 0 24px;
+    background-image: url(./meet-landing-page/meet-landing-page/starter-code/assets/tablet/image-hero.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: center;
+}
+
+.section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 207px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.section-1 h1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 24px;
+}
+
+.section-1 p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--gray);
+    margin-bottom: 32px;
+}
+
+#download{
+    width: 193px;
+    height: 58px;
+    border: 0;
+    border-radius: 29px;
+    background-color: var(--mint);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: var(--family);
+}
+
+span{
+    color: var(--sky);
+    font-family: var(--family);
+}
+
+#about{
+    width: 139px;
+    height: 58px;
+    border: 0;
+    border-radius: 29px;
+    background-color: var(--purple);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    font-family: var(--family);
+}
+
+.numbering{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.line{
+    border: 0;
+    border-left: 1px solid var(--gray);
+    opacity: 0.25;
+    height: 84px;
+}
+
+.circle{
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgba(135, 135, 157, 0.25);  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--gray);
+    background-color: var(--white);
+}
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    max-width: 375px;
+    margin: 64px 0;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4{
+    max-width: 100%;
+    border-radius: 8px;
+
+}
+
+.img-1{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.img-2{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.img-3{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.img-4{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.txt-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-container h2{
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--mint);
+}
+
+.txt-container h1{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--black);
+    margin: 24px 0 32px 0;
+}
+
+.numbering-2{
+    position: absolute;
+    top: -112px;
+    margin-top: 0;
+}
+
+.txt-container p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--gray);
+}
+
+footer{
+    background-color: var(--mint);
+    width: 100%;
+    height: 428px;
+    position: relative;
+    margin-top: 176px;
+    display: flex;
+    justify-content: center ;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url(./meet-landing-page/meet-landing-page/starter-code/assets/mobile/image-footer.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    position: absolute;
+
+}
+
+.content{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+footer h1{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 24px;
+}
+
+footer p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 32px;
+}
+
+footer #download{
+    background-color: var(--purple);
+}
+
+footer span{
+    color: var(--pink);
+}
